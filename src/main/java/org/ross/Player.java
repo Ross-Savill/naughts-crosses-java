@@ -89,7 +89,6 @@ public class Player {
     }
 
     public void canPlayerOnlyDraw(ArrayList<Integer> oppositionPositions, int lastMoveIndex) {
-        System.out.println("Token::::" + token);
         int newPosition = oppositionPositions.get(lastMoveIndex);
         ArrayList<int[]> toRemove = new ArrayList<>();
         for(int[] winnableFormation : remainingWinnableFormations) {
